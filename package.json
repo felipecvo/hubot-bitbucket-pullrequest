@@ -1,7 +1,7 @@
 {
   "name": "hubot-bitbucket-pullrequest",
   "description": "A hubot script that notifies pull requests",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "author": "Felipe Oliveira <felipecvo@gmail.com>",
   "license": "MIT",
 
@@ -37,7 +37,9 @@
     "gulp-sourcemaps": "^0.4.1",
     "gulp-util": "^2.2.19",
     "power-assert": "^0.7.2",
-    "sinon": "^1.10.2"
+    "sinon": "^1.10.2",
+    "express": "3.3.4",
+    "supertest": "*"
   },
 
   "main": "index.coffee",

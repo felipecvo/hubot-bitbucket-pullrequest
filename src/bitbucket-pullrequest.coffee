@@ -15,8 +15,11 @@
 #   Felipe Oliveira[@<org>]
 
 module.exports = (robot) ->
-  robot.respond /hello/, (msg) ->
-    msg.reply "hello!"
-
-  robot.hear /orly/, ->
-    msg.send "yarly"
+  robot.router.post '/bitbucket-pullrequest', (req, res) ->
+    payload = req.body
+    if payload.pullrequest_created
+      payload = payload.pullrequest_created
+      msg = "New pull request ##{payload.id} (#{payload.title})
+      by @#{payload.author.username}"
+      robot.messageRoom req.query.room, msg
+    res.end 'OK'
