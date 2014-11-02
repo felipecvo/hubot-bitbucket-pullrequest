@@ -19,7 +19,7 @@ module.exports = (robot) ->
     payload = req.body
     if payload.pullrequest_created
       payload = payload.pullrequest_created
-      msg = "New pull request ##{payload.id} (#{payload.title})
-      by @#{payload.author.username}"
+      msg = "Pull request ##{payload.id}: #{payload.title}
+(#{payload.destination.full_name}) by @#{payload.author.username}"
       robot.messageRoom req.query.room, msg
     res.end 'OK'
