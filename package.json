@@ -1,7 +1,7 @@
 {
   "name": "hubot-bitbucket-pullrequest",
   "description": "A hubot script that notifies pull requests",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "author": "Felipe Oliveira <felipecvo@gmail.com>",
   "license": "MIT",
 
