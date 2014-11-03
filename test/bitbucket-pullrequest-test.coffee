@@ -15,7 +15,7 @@ describe 'bitbucket-pullrequest', ->
 
   it 'registers a route', (done) ->
     robot = @robot
-    payload = { pullrequest_created: { id: 42, title: 'PR title', author: { username: 'blue' } } }
+    payload = { pullrequest_created: { id: 42, title: 'PR title', author: { username: 'blue' }, destination: { full_name: 'user/repo' } } }
     request(app).post('/bitbucket-pullrequest?room=%23hubot').send(payload).end (e, r) ->
-      assert.ok(robot.messageRoom.calledWith('#hubot', 'New pull request #42 (PR title) by @blue'))
+      assert.ok(robot.messageRoom.calledWith('#hubot', 'Pull request #42: PR title (user/repo) by @blue'))
       done()
