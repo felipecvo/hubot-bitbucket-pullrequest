@@ -25,7 +25,7 @@ hubot>> hello!
 ```
 
 [npm-url]: https://npmjs.org/package/hubot-bitbucket-pullrequest
-[npm-image]: http://img.shields.io/npm/v/hubot-bitbucket-pullrequesty.svg?style=flat
+[npm-image]: http://img.shields.io/npm/v/hubot-bitbucket-pullrequest.svg?style=flat
 [travis-url]: https://travis-ci.org/felipecvo/hubot-bitbucket-pullrequest
 [travis-image]: http://img.shields.io/travis/felipecvo/hubot-bitbucket-pullrequest/master.svg?style=flat
 [daviddm-url]: https://david-dm.org/felipecvo/hubot-bitbucket-pullrequest.svg?theme=shields.io
