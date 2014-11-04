@@ -19,9 +19,12 @@ Then add **hubot-bitbucket-pullrequest** to your `external-scripts.json`:
 
 ## Sample Interaction
 
+Add bitbucket Pull Request Hook to http://yourhubot.com/bitbucket-pullrequest?room=YourRoom
+
+After pull request is created, then hubot will notify you:
+
 ```
-user1>> hubot hello
-hubot>> hello!
+hubot>> Pull request #42: Pull Request title (user/repo) by @felipecvo
 ```
 
 [npm-url]: https://npmjs.org/package/hubot-bitbucket-pullrequest
